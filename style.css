@@ -1,0 +1,196 @@
+
+
+
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 93vh;
+  
+    margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  color: #b30059;
+  font-size: 2em;
+}
+
+.quiz-container {
+   
+  max-width: 600em;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.question-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow:5px 5px 5px 10px  #fc0505;
+}
+
+.question-text {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.options {
+  text-align: left;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.options input {
+  margin-right: 10px;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: backgroun 0.3s;
+  text-align: center;
+  
+}
+#Play{
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  /* Faz o botão flutuar */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+}
+#Play:hover{
+    color: black;
+    background-color: #ff0b0b;
+}
+
+ button:hover {
+  background: #ff0b0b;
+  color: #333;
+}
+
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.falling {
+  position: fixed;
+  top: -50px;
+  color: #ff4d6d;
+  font-size: 20px;
+  animation: fall linear infinite;
+  z-index: 0;
+}
+footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 5px;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+footer p{
+   margin: 2%;
+   padding: 0;
+
+}
+
+footer a{
+    color: #f70656;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    text-decoration: underline white;
+}
+
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  .navigation button {
+    width: 100%
+  
+   }
+     footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    position: fixed;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    
+  }
+  button a{
+    text-align: center;
+  }
+  body{
+    padding-bottom: 60px;
+  }
+  #Play{
+
+   bottom: 136px;
+   right: 144px;
+   
+
+  }
+}
+
+
