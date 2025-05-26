@@ -97,6 +97,7 @@ header h1 {
 #Play:hover{
     color: black;
     background-color: #ff0b0b;
+     
 }
 
  button:hover {
@@ -186,8 +187,10 @@ footer a:hover{
   }
   #Play{
 
-   bottom: 136px;
-   right: 144px;
+   bottom: 120px;
+   right: 200px;
+
+   
    
 
   }

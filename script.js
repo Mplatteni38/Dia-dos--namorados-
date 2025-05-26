@@ -113,10 +113,15 @@ function showResult() {
 
 function toggleMusic() {
   const music = document.getElementById('romanticMusic');
+  const playButton = document.getElementById('Play')   // <<<<<<
+  
   if (music.paused) {
     music.play();
+    playButton.textContent = "⏸️"; //<<<<<<<
+
   } else {
     music.pause();
+    playButton.textContent = "▶️"; //<<<<<
   }
 }
 
