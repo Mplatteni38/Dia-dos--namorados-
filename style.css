@@ -158,6 +158,9 @@ footer a:hover{
 }
 
 @media (max-width: 600px) {
+  body{
+    background-color: #ee88c76b;
+  }
   header h1 {
     font-size: 1.5em;
   }
@@ -179,21 +182,39 @@ footer a:hover{
     text-align: center;
     
   }
-  button a{
-    text-align: center;
+  button {
+  text-align: center;
+   
   }
   body{
     padding-bottom: 60px;
   }
   #Play{
+    
+  
+  position: fixed;
+  bottom: 82px;
+ margin: 20px;
+  left: 42%;
+  font-size: 20px;
+  border-radius: 79px;
+  transform: translateX(-50%); 
+  background-color:  #ee88c700;
+  padding: 30px;
+  width: 5px;
+  height: 5px;
+text-align: center;
 
-   bottom: 120px;
-   right: 200px;
-
-   
-   
-
+  display: flex;           
+  align-items: center;      
+  justify-content: center; 
+ 
+  
   }
+  
+
 }
+
+
 
 
